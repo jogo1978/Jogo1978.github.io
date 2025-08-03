@@ -1,0 +1,693 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ian Gordon MIVSA - Professional property valuations and digital mapping services in KwaZulu-Natal, South Africa. MIVSA registered expert providing accurate, reliable assessments.">
+    <meta name="keywords" content="property valuers, digital mapping, KwaZulu-Natal, MIVSA, Ian Gordon, residential valuations, commercial valuations, Lions River">
+    <meta property="og:title" content="Ian Gordon Property Valuers - MIVSA Registered Professional">
+    <meta property="og:description" content="Expert property valuations and digital mapping services in KwaZulu-Natal, South Africa.">
+    <meta property="og:url" content="https://www.iangordon.co.za">
+    <title>Ian Gordon Property Valuers | MIVSA Registered Professional | KwaZulu-Natal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            overflow-x: hidden;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-text {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .logo-subtext {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), 
+                        url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDYwMCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNGE5MGUyO3N0b3Atb3BhY2l0eToxIiAvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzZiYTNmNTtzdG9wLW9wYWNpdHk6MSIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9InVybCgjYSkiLz48L3N2Zz4=');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .hero .qualification {
+            font-size: 1.4rem;
+            color: #ffd700;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #dc3545, #c82333);
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(220, 53, 69, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(220, 53, 69, 0.4);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #dc3545;
+            margin-bottom: 3rem;
+            font-weight: 600;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 4px solid #dc3545;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: #dc3545;
+        }
+
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+
+        .service-card p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .credentials {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #dc3545;
+            margin-top: 2rem;
+        }
+
+        .credentials h4 {
+            color: #dc3545;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-image {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            height: 400px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 5rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.1);
+            padding: 3rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .contact-form h3 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: #ffd700;
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.9);
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #dc3545, #c82333);
+            color: white;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(220, 53, 69, 0.4);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            border-left: 4px solid #dc3545;
+        }
+
+        .contact-icon {
+            font-size: 2.2rem;
+            color: #ffd700;
+            margin-top: 0.2rem;
+        }
+
+        .contact-item strong {
+            color: #ffd700;
+            font-size: 1.2rem;
+        }
+
+        .contact-item a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        footer p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero .qualification {
+                font-size: 1.1rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* South Africa themed accents */
+        .sa-accent {
+            background: linear-gradient(90deg, #007749 33%, #ffb81c 33%, #ffb81c 66%, #de3831 66%);
+            height: 4px;
+            width: 100px;
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <div>
+                    <div class="logo-text">Ian Gordon Property Valuers</div>
+                    <div class="logo-subtext">MIVSA Registered • Reg No 2129</div>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" aria-label="Go to home section">Home</a></li>
+                <li><a href="#services" aria-label="Go to services section">Services</a></li>
+                <li><a href="#about" aria-label="Go to about section">About</a></li>
+                <li><a href="#contact" aria-label="Go to contact section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Ian Gordon</h1>
+            <div class="qualification">MIVSA • Professional Valuer Reg No 2129</div>
+            <p>Expert property valuations and digital mapping services across KwaZulu-Natal and South Africa. Professional, accurate, and reliable property assessments with cutting-edge mapping technology.</p>
+            <div class="sa-accent"></div>
+            <a href="#contact" class="cta-button" aria-label="Get a professional valuation quote">Get Your Professional Valuation</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Professional Services</h2>
+            <div class="section-subtitle">DEFINING PROPERTY</div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon" aria-hidden="true">🗺️</div>
+                    <h3>Digital Mapping Services</h3>
+                    <p>Advanced digital mapping and surveying using GPS technology, drone imagery, and GIS systems. Precise property boundary mapping and comprehensive topographical analysis for accurate property definition.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon" aria-hidden="true">🏡</div>
+                    <h3>Residential Valuations</h3>
+                    <p>Comprehensive MIVSA-compliant valuations for houses, apartments, townhouses, and residential complexes throughout KwaZulu-Natal. Perfect for mortgage applications, insurance, and property sales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon" aria-hidden="true">🏢</div>
+                    <h3>Commercial Valuations</h3>
+                    <p>Expert commercial property assessments for offices, retail spaces, warehouses, and industrial properties. Supporting investment decisions and financing applications with professional reports.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon" aria-hidden="true">🌾</div>
+                    <h3>Agricultural Valuations</h3>
+                    <p>Specialised agricultural property valuations including farms, smallholdings, and rural properties across KwaZulu-Natal, with detailed consideration for land use and agricultural potential.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon" aria-hidden="true">⚖️</div>
+                    <h3>Legal & Insurance Valuations</h3>
+                    <p>Court-approved valuations for legal proceedings, divorce settlements, estate planning, and comprehensive insurance valuations. Professional reports meeting all legal requirements.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon" aria-hidden="true">📊</div>
+                    <h3>Market Analysis & Reports</h3>
+                    <p>Comprehensive market analysis and trend reports enhanced with digital mapping data. Superior property insights and investment guidance for the KwaZulu-Natal property market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Ian Gordon</h2>
+            <div class="sa-accent"></div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Professional Property Valuation & Digital Mapping</h3>
+                    <p>Ian Gordon Property Valuers CC combines traditional property valuation expertise with cutting-edge digital mapping technology. Based in the heart of KwaZulu-Natal, we provide accurate, reliable, and legally compliant property valuations enhanced by precision digital mapping services.</p>
+                    
+                    <p>Our advanced digital mapping capabilities include GPS surveying, drone imagery analysis, GIS mapping, and topographical studies. This technology enables us to provide more accurate property assessments, precise boundary identification, and comprehensive land analysis that traditional methods cannot match.</p>
+                    
+                    <p>As a MIVSA registered professional valuer, we serve banks, legal firms, insurance companies, municipalities, and private clients throughout KwaZulu-Natal and South Africa with professional reports that exceed regulatory requirements and industry standards.</p>
+                    
+                    <div class="credentials">
+                        <h4>Professional Qualifications & Registration</h4>
+                        <p><strong>MIVSA</strong> - Member of Institute of Valuers of South Africa<br>
+                        <strong>Professional Valuer Registration:</strong> No 2129<br>
+                        <strong>Company Registration:</strong> Ian Gordon Property Valuers CC - CK 2000/010195/23</p>
+                    </div>
+                </div>
+                <div class="about-image" aria-hidden="true">
+                    🏛️
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="sa-accent"></div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Request a Professional Valuation</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="property">Property Address</label>
+                            <input type="text" id="property" name="property" required aria-required="true" placeholder="Include city/town and province">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Required</label>
+                            <select id="service" name="service" required aria-required="true">
+                                <option value="">Select a service</option>
+                                <option>Digital Mapping Services</option>
+                                <option>Residential Valuation</option>
+                                <option>Commercial Valuation</option>
+                                <option>Agricultural Valuation</option>
+                                <option>Legal/Insurance Valuation</option>
+                                <option>Market Analysis</option>
+                                <option>Combined Valuation & Mapping</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Please provide any additional information about your valuation requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Request Professional Quote</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon" aria-hidden="true">📍</span>
+                        <div>
+                            <strong>Office Address</strong><br>
+                            10 Highgate Estate, R103<br>
+                            Lions River, KwaZulu-Natal<br>
+                            <strong>Postal:</strong> P.O. Box 216 Hilton, 3245<br>
+                            <a href="https://maps.google.com/?q=10+Highgate+Estate+R103+Lions+River+KZN" target="_blank" rel="noopener" aria-label="View location on Google Maps">View on Map</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon" aria-hidden="true">📞</span>
+                        <div>
+                            <strong>Phone & Mobile</strong><br>
+                            <a href="tel:+27825527219">+27 82 552 7219</a> (Mobile)<br>
+                            Available 7 Days a Week<br>
+                            <strong>Fax:</strong> +27 086 608 6416
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon" aria-hidden="true">✉️</span>
+                        <div>
+                            <strong>Email</strong><br>
+                            <a href="mailto:ian@iangordon.co.za">ian@iangordon.co.za</a><br>
+                            <a href="mailto:admin@iangordon.co.za">admin@iangordon.co.za</a><br>
+                            Professional & Confidential
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon" aria-hidden="true">🕒</span>
+                        <div>
+                            <strong>Business Hours</strong><br>
+                            Monday - Friday: 8:00 AM - 5:00 PM<br>
+                            Saturday: 9:00 AM - 1:00 PM<br>
+                            <em>Emergency valuations available</em>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon" aria-hidden="true">🌐</span>
+                        <div>
+                            <strong>Website</strong><br>
+                            <a href="https://www.iangordon.co.za" target="_blank" rel="noopener">www.iangordon.co.za</a><br>
+                            Online Quote Requests Available
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> Ian Gordon Property Valuers CC | Company Registration: CK 2000/010195/23<br>
+            MIVSA Registered Professional Valuer No 2129 | Serving KwaZulu-Natal & South Africa<br>
+            <strong>DEFINING PROPERTY</strong> • Digital Mapping & Professional Valuations</p>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+
+            // Reset all field styles
+            requiredFields.forEach(field => {
+                field.style.border = 'none';
+            });
+
+            // Validate required fields
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.border = '2px solid #dc3545';
+                }
+            });
+
+            // Email validation
+            const email = form.email.value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email && !emailRegex.test(email)) {
+                isValid = false;
+                form.email.style.border = '2px solid #dc3545';
+            }
+
+            // Phone validation (South African format)
+            const phone = form.phone.value;
+            const phoneRegex = /^(\+27|0)[0-9]{9}$/;
+            if (phone && !phoneRegex.test(phone.replace(/\s/g, ''))) {
+                isValid = false;
+                form.phone.style.border = '2px solid #dc3545';
+            }
+
+            if (!isValid) {
+                alert('Please fill in all required fields correctly. Phone numbers should be in South African format (+27 or 0 followed by 9 digits).');
+                return;
+            }
+
+            // Success message
+            alert('Thank you for your inquiry! Ian Gordon will contact you within 24 hours to discuss your professional valuation requirements.');
+            form.reset();
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background change on scroll
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                header.style.background = 'rgba(44, 62, 80, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)';
+                header.style.backdropFilter = 'none';
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>
